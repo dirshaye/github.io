@@ -8,6 +8,14 @@
     <meta content="Contact Dirshaye Faltamo for professional connections and inquiries." name="description">
     <meta name="google" content="notranslate">
     <meta name="author" content="Dirshaye Faltamo">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Open Graph and Twitter Card Metadata -->
+    <meta property="og:title" content="Contact Dirshaye Faltamo">
+    <meta property="og:description" content="Get in touch with Dirshaye for professional collaborations.">
+    <meta property="og:image" content="your-profile-image.jpg">
+    <meta property="og:url" content="https://your-website.com">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
@@ -48,6 +56,13 @@
             margin-bottom: 20px;
         }
 
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
         .address-container {
             margin-top: 20px;
         }
@@ -70,7 +85,7 @@
         }
 
         .fa-icon i {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
 
         .social-icons {
@@ -81,7 +96,19 @@
         .social-icons a {
             margin: 0 10px;
             color: #007bff;
+            font-size: 1.5rem;
             transition: color 0.3s;
+            position: relative;
+        }
+
+        .social-icons a img {
+            height: 1.5rem;
+            filter: invert(29%) sepia(94%) saturate(744%) hue-rotate(189deg) brightness(91%) contrast(85%);
+            transition: filter 0.3s;
+        }
+
+        .social-icons a img:hover {
+            filter: invert(45%) sepia(96%) saturate(574%) hue-rotate(180deg) brightness(87%) contrast(89%);
         }
 
         .social-icons a:hover {
@@ -91,10 +118,11 @@
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #007bff;
+            background-color: #333;
             color: white;
             width: 100%;
             margin-top: auto;
+            font-size: 1.5rem;
         }
 
         .container {
@@ -113,12 +141,18 @@
         a[href^="tel"]:hover {
             text-decoration: underline;
         }
+
+        .leetcode-icon {
+            height: 1.5rem;
+            vertical-align: middle;
+        }
     </style>
 </head>
 
 <body>
     <div class="section-container">
         <div class="container">
+            <img src="profile-image1.jpg" alt="Dirshaye Faltamo" class="profile-image">
             <h1>Contact Me</h1>
             <div class="address-container">
                 <ul class="list-unstyled">
@@ -126,13 +160,13 @@
                         <span class="fa-icon">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </span>
-                        <a href="tel:+905346619539">+90 534 661 9539</a>
+                        <a href="tel:+905346619539" >+90 534 661 9539</a>
                     </li>
                     <li>
                         <span class="fa-icon">
                             <i class="fa fa-at" aria-hidden="true"></i>
                         </span>
-                        <a href="mailto:me@dirshaye.net">me@dirshaye.net</a>
+                        <a href="mailto:me@dirshaye.net" title="Email">me@dirshaye.net</a>
                     </li>
                     <li>
                         <span class="fa-icon">
@@ -142,11 +176,17 @@
                     </li>
                 </ul>
                 <div class="social-icons">
+                    <a href="https://www.github.com/dirshaye" title="GitHub" class="fa-icon" aria-label="GitHub">
+                        <i class="fa fa-github"></i>
+                    </a>
                     <a href="https://www.instagram.com/dreisaac0/" title="Instagram" class="fa-icon" aria-label="Instagram">
                         <i class="fa fa-instagram"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/dirshaye/" title="LinkedIn" class="fa-icon" aria-label="LinkedIn">
                         <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/dirshaye" title="LeetCode" class="fa-icon" aria-label="LeetCode">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" class="leetcode-icon">
                     </a>
                 </div>
             </div>
@@ -155,7 +195,7 @@
 
     <footer class="footer-container">
         <div class="container">
-            <p>Dirshaye Faltamo<br>2024</p>
+            <p>&copy; 2024 Dirshaye Faltamo. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
