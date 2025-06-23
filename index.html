@@ -3,10 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; URL='contact.html'">
-    <title>Redirecting...</title>
+    <title>Dirshaye Faltamo | Backend, Data & DevOps Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
+    <link rel="icon" href="./static/assets/favicon.ico">
+    <meta name="description" content="Portfolio of Dirshaye Faltamo - Backend Developer, Data Engineer, DevOps Enthusiast.">
+    <style>
+        body {
+            background: #181a20;
+        }
+        #particles-js {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
-<body>
-    <!-- <p>If you are not redirected, <a href="contact.html">click here</a>.</p> -->
+<body class="bg-[#181a20] text-gray-100 min-h-screen flex flex-col font-sans">
+    <div id="particles-js"></div>
+    <div class="content w-full flex flex-col min-h-screen">
+        <!-- Minimal Navigation -->
+        <nav class="w-full flex justify-end px-8 py-4">
+            <div class="flex space-x-4">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="#education" class="hover:text-blue-400 transition">Education</a>
+                <a href="#certifications" class="hover:text-blue-400 transition">Certifications</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-bg" id="hero">
+            <div class="hero-content flex flex-col items-center justify-center text-center">
+                <img src="./static/assets/images/profile-image1.jpg" alt="Dirshaye Faltamo" class="w-20 h-20 rounded-full border-4 border-gray-700 shadow mb-4">
+                <h1 class="text-3xl md:text-4xl font-bold mb-2 tracking-tight">Dirshaye Faltamo</h1>
+                <h2 class="text-lg md:text-xl text-blue-400 mb-4 font-medium">Backend Developer | Data Engineer | DevOps Enthusiast</h2>
+                <div class="flex justify-center space-x-4 mb-4">
+                    <a href="mailto:dirshayeyishak@gmail.com" class="hover:text-blue-400 transition" title="Email"><i class="fa fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/dirshaye" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/dirshaye" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition" title="GitHub"><i class="fa fa-github"></i></a>
+                </div>
+                <p class="max-w-xl text-gray-300 text-base md:text-lg mb-2">I build scalable backend systems, automate data pipelines, and love DevOps.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="max-w-2xl mx-auto py-12 px-4">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">About Me</h2>
+            <p class="text-gray-300">Software engineering student passionate about backend development, data engineering, and DevOps. Experienced with Python, Django, FastAPI, AWS, Docker, and more. I enjoy solving real-world problems, building robust systems, and learning new technologies.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="max-w-4xl mx-auto py-12 px-4">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div>
+                    <h3 class="font-bold text-gray-200 mb-2">Programming Languages</h3>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/></span>Python</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/></span>Java</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"/></span>C#</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"/></span>SQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-200 mb-2">Frameworks</h3>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"/></span>Django</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"/></span>FastAPI</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain.svg" alt="ASP.NET"/></span>ASP.NET</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask"/></span>Flask</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-200 mb-2">Databases & Data Tools</h3>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"/></span>PostgreSQL</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/></span>MongoDB</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" alt="Apache Airflow"/></span>Apache Airflow</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachepyspark/apachepyspark-original.svg" alt="PySpark"/></span>PySpark</li>
+                        <!-- Power BI icon is not available in Devicon, so omit or use a generic chart icon if needed -->
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-200 mb-2">Cloud & DevOps</h3>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazonaws.svg" alt="AWS" style="filter: invert(62%) sepia(99%) saturate(749%) hue-rotate(176deg) brightness(99%) contrast(101%);"/></span>AWS</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/></span>Docker</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"/></span>Linux</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/></span>Git</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/></span>GitHub</li>
+                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" alt="GitHub Actions"/></span>GitHub Actions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="max-w-3xl mx-auto py-12 px-4">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Projects</h2>
+            <div class="space-y-6">
+                <div class="bg-[#23272f] rounded-lg p-5 shadow border border-gray-800">
+                    <h3 class="font-bold text-lg text-gray-100 mb-1">OmniPriceX – AI-Powered Dynamic Pricing System</h3>
+                    <div class="text-xs text-blue-300 mb-1">Django, scikit-learn, Apache Airflow</div>
+                    <ul class="list-disc list-inside text-gray-300 text-sm mb-1">
+                        <li>Designing a backend ML-powered pricing tool using Django and scikit-learn.</li>
+                        <li>Structuring real-time data pipelines and automation using Apache Airflow.</li>
+                        <li>Currently focused on implementing dynamic pricing logic and dashboard integration.</li>
+                    </ul>
+                </div>
+                <div class="bg-[#23272f] rounded-lg p-5 shadow border border-gray-800">
+                    <h3 class="font-bold text-lg text-gray-100 mb-1">Smart Package Detection System</h3>
+                    <div class="text-xs text-blue-300 mb-1">Flask, Micropython, IoT</div>
+                    <ul class="list-disc list-inside text-gray-300 text-sm mb-1">
+                        <li>Developed a smart IoT mailbox system using Raspberry Pi Pico W, MQTT over TLS, and ultrasonic sensors for real-time package detection.</li>
+                        <li>Implemented secure email alerts and a Flask REST API to enable remote monitoring and third-party integration.</li>
+                        <li>Designed the system with device provisioning, cloud access, and scalability in mind, simulating real-world IoT architecture.</li>
+                    </ul>
+                </div>
+                <div class="bg-[#23272f] rounded-lg p-5 shadow border border-gray-800">
+                    <h3 class="font-bold text-lg text-gray-100 mb-1">Cybersecurity Risk Detector</h3>
+                    <div class="text-xs text-blue-300 mb-1">scikit-learn, Streamlit</div>
+                    <ul class="list-disc list-inside text-gray-300 text-sm mb-1">
+                        <li>Developed a machine learning classifier to detect cybersecurity threats.</li>
+                        <li>Generated synthetic datasets, evaluated 10 ML algorithms, and selected the best model.</li>
+                        <li>Deployed a real-time risk prediction app using Streamlit.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="max-w-2xl mx-auto py-12 px-4">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Experience</h2>
+            <div class="bg-[#23272f] rounded-lg p-5 shadow border border-gray-800">
+                <h3 class="font-bold text-lg text-gray-100 mb-1">Forage Software Engineering Virtual Internship</h3>
+                <div class="text-xs text-blue-300 mb-1">Accenture North America, Jan 2025</div>
+                <ul class="list-disc list-inside text-gray-300 text-sm mb-1">
+                    <li>Completed a job simulation supporting a small dev team overwhelmed by a growing code base.</li>
+                    <li>Wrote a class in Java (Spring Boot) to perform search on an interactive website.</li>
+                    <li>Set up automated builds using Jenkins to validate code changes on every push.</li>
+                    <li>Managed the team's workload by writing user stories in an Agile sprint planning session.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="max-w-2xl mx-auto py-12 px-4">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Education</h2>
+            <div class="mb-4">
+                <h3 class="font-bold text-gray-100">Instituto Politécnico de Tomar, Portugal</h3>
+                <div class="text-xs text-blue-300 mb-1">Erasmus+ Exchange program in Computer Engineering, Feb 2025 - June 2025</div>
+                <div class="text-gray-300 text-sm">Relevant Coursework: Project Management, DevOps, Web Development, Internet of Things, Operating Systems, Intelligent Systems.</div>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-bold text-gray-100">Celal Bayar University, Turkey</h3>
+                <div class="text-xs text-blue-300 mb-1">BSc in Software Engineering, June 2026 (Expected)</div>
+                <div class="text-gray-300 text-sm">Relevant Coursework: Data Structures and Algorithms, OOP, Advanced Web Programming, DBMS, Software Architecture and Design, Machine Learning, Computer Networks, Software Testing, Probability and Statistics, Service-Oriented Architecture.</div>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-100">AddisCoder, Ethiopia</h3>
+                <div class="text-xs text-blue-300 mb-1">CS Bootcamp by Harvard and Stanford Faculty, Summer 2019</div>
+                <div class="text-gray-300 text-sm">Relevant Skills: Data Structures and Algorithms, Python Programming</div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="max-w-2xl mx-auto py-12 px-4">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Certifications</h2>
+            <ul class="list-disc list-inside text-gray-300 text-sm">
+                <li>The Complete Python Developer — Zero To Mastery Academy (Jan 2023)</li>
+                <li>Career Essentials in Data Analysis — Microsoft and LinkedIn (Feb 2024)</li>
+                <li>Data Engineering Foundations Professional Certificate — by Astronomer (Feb 2025)</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="max-w-2xl mx-auto py-12 px-4">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Contact</h2>
+            <form class="space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full p-2 rounded border border-gray-700 bg-[#23272f] text-gray-100">
+                <input type="email" placeholder="Your Email" class="w-full p-2 rounded border border-gray-700 bg-[#23272f] text-gray-100">
+                <textarea placeholder="Your Message" class="w-full p-2 rounded border border-gray-700 bg-[#23272f] text-gray-100"></textarea>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
+            </form>
+        </section>
+        <!-- Social Icons at the very end -->
+        <div class="flex justify-center space-x-8 my-8">
+            <a href="mailto:dirshayeyishak@gmail.com" class="hover:text-blue-400" title="Email"><i class="fa fa-envelope fa-2x"></i></a>
+            <a href="https://github.com/dirshaye" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400" title="GitHub"><i class="fa fa-github fa-2x"></i></a>
+            <a href="https://linkedin.com/in/dirshaye" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400" title="LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
+        </div>
+        <footer class="mt-auto py-6 text-center text-gray-500 text-sm">
+            &copy; 2025 Dirshaye Faltamo. All Rights Reserved.
+        </footer>
+    </div>
+    <script src="https://use.fontawesome.com/4eae3d7c7a.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        // Particles.js config
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {"value": 80, "density": {"enable": true, "value_area": 800}},
+                "color": {"value": "#4f8cff"},
+                "shape": {"type": "circle"},
+                "opacity": {"value": 0.3, "random": false},
+                "size": {"value": 3, "random": true},
+                "line_linked": {"enable": true, "distance": 150, "color": "#4f8cff", "opacity": 0.2, "width": 1},
+                "move": {"enable": true, "speed": 1.5, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false}
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {"onhover": {"enable": true, "mode": "repulse"}, "onclick": {"enable": true, "mode": "push"}, "resize": true},
+                "modes": {"repulse": {"distance": 100, "duration": 0.4}, "push": {"particles_nb": 4}}
+            },
+            "retina_detect": true
+        });
+    </script>
 </body>
 </html>
