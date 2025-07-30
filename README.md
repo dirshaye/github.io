@@ -17,7 +17,7 @@ This repository contains the source code for a simple contact information websit
 
 You can view the website by visiting the following link:
 
-[GitHub Pages Deployment](https://dirshaye.github.io)
+[GitHub Pages Deployment](https://dirshaye.net)
 
 ---
 
