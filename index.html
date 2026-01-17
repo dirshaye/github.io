@@ -1,319 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dirshaye Faltamo | Software Engineer</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
-    <link rel="icon" href="./static/assets/favicon.ico">
-    <meta name="description" content="Portfolio of Dirshaye Faltamo - Software Engineering Intern">
-    <style>
-        body {
-            background: #181a20;
-        }
-        #particles-js {
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            pointer-events: none;
-        }
-        .content {
-            position: relative;
-            z-index: 1;
-        }
-    </style>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-</head>
-<body class="bg-[#181a20] text-gray-100 min-h-screen flex flex-col font-sans">
-    <div id="particles-js"></div>
-    <div class="content w-full flex flex-col min-h-screen">
-        <!-- Minimal Navigation -->
-        <nav class="w-full flex justify-end px-8 py-4">
-            <div class="flex space-x-4">
-                <a href="#about" class="hover:text-blue-400 transition">About</a>
-                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
-                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
-                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
-                <a href="#education" class="hover:text-blue-400 transition">Education</a>
-                <a href="#certifications" class="hover:text-blue-400 transition">Certifications</a>
-                <a href="/contact.html" class="hover:text-blue-400 transition">Contact</a>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dirshaye Faltamo</title>
+    <meta content="Portfolio of Dirshaye Faltamo" name="description" />
+    <meta content="software engineer, backend, cloud" name="keywords" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="container">
+        <h1><a href="index.html">Dirshaye Faltamo</a></h1>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link active" href="#header">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#education">Education</a></li>
+            <li><a class="nav-link" href="#experience">Experience</a></li>
+            <li><a class="nav-link" href="#portfolio">Projects</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="assets/resume/Dirshaye_Yishak_Faltamo_resume%20(90).pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
 
-
-
-        <!-- Hero Section -->
-        <section class="hero-bg" id="hero">
-            <div class="hero-content flex flex-col items-center justify-center text-center py-12">
-                <img src="./static/assets/images/profile-image1.jpg" alt="Dirshaye Faltamo" class="w-24 h-24 rounded-full border-4 border-gray-700 shadow mb-4">
-                <h1 class="text-3xl md:text-4xl font-bold mb-2 tracking-tight">Dirshaye Faltamo</h1>
-                <h2 class="text-lg md:text-xl text-blue-400 mb-4 font-medium">Software engineer</h2>
-                <div class="flex justify-center space-x-4 mb-4">
-                    <a href="mailto:dirshayeyishak@gmail.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition" title="Gmail">
-                        <span class="inline-block align-middle w-6 h-6">
-                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" style="filter: invert(40%) sepia(90%) saturate(1000%) hue-rotate(330deg) brightness(100%) contrast(100%);" />
-                        </span>
-                    </a>
-                    <a href="https://linkedin.com/in/dirshaye" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition" title="LinkedIn">
-                        <span class="inline-block align-middle w-6 h-6">
-                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="filter: invert(40%) sepia(90%) saturate(1000%) hue-rotate(180deg) brightness(100%) contrast(100%);" />
-                        </span>
-                    </a>
-                    <a href="https://github.com/dirshaye" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition" title="GitHub">
-                        <span class="inline-block align-middle w-6 h-6">
-                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" style="filter: invert(100%) brightness(80%);" />
-                        </span>
-                    </a>
-                    <a href="https://leetcode.com/dirshaye0/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition" title="LeetCode">
-                        <span class="inline-block align-middle w-6 h-6">
-                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/leetcode.svg" alt="LeetCode" style="filter: invert(70%) sepia(90%) saturate(1000%) hue-rotate(10deg) brightness(100%) contrast(100%);" />
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="max-w-2xl mx-auto py-12 px-4">
-            <h2 class="text-2xl font-semibold mb-4 text-blue-400">About Me</h2>
-            <p class="text-gray-300">
-            Software Engineering Student interested in building systems that are reliable, scalable, and efficient. Strong computer science foundation with hands-on experience in designing APIs, developing microservices, and making services scale in cloud-native architectures.
-
-Deeply curious about distributed systems, automation, and performance optimization—I thrive on solving challenges in scalability, data flow, and service interaction. I enjoy the pace of modern engineering environments, turning complexity into elegant, reliable solutions.
-
-Recent work includes developing an AI-powered dynamic pricing platform using a FastAPI microservices backend, React frontend, MongoDB Atlas, and AWS deployment. Beyond projects, I stay sharp by tackling algorithmic challenges and contributing to open-source.
-
-            </p>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="max-w-4xl mx-auto py-12 px-4">
-            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Technical Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
-                <div>
-                    <h3 class="font-bold text-gray-200 mb-2">Languages</h3>
-                    <ul class="text-gray-300 text-sm space-y-2">
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/></span>Python</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go"/></span>Go</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/></span>Java</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"/></span>SQL</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash/Shell"/></span>Bash/Shell</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-200 mb-2">Frameworks</h3>
-                    <ul class="text-gray-300 text-sm space-y-2">
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"/></span>FastAPI</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"/></span>Django</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain.svg" alt="ASP.NET Core"/></span>ASP.NET Core</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/></span>React</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-200 mb-2">Databases & Caching</h3>
-                    <ul class="text-gray-300 text-sm space-y-2">
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"/></span>PostgreSQL</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/></span>MongoDB (Atlas)</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/elastic.svg" alt="Elasticsearch"/></span>Elasticsearch</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis"/></span>Redis</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-200 mb-2">Cloud, DevOps & Infra</h3>
-                    <ul class="text-gray-300 text-sm space-y-2">
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazonaws.svg" alt="AWS"/></span>AWS</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftazure.svg" alt="Azure"/></span>Azure</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/></span>Docker</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/></span>Git</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" alt="GitHub Actions"/></span>GitHub Actions (CI/CD)</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/terraform.svg" alt="Terraform"/></span>Terraform</li>
-
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-200 mb-2">Backend Technologies</h3>
-                    <ul class="text-gray-300 text-sm space-y-2">
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/postman.svg" alt="Postman"/></span>RESTful APIs</li>
-                        <li>
-                            <span class="inline-block align-middle w-5 h-5 mr-2">
-                                <!-- Inline gRPC badge for better visibility on dark background -->
-                                <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <rect width="24" height="24" rx="4" fill="#0F9D58"/>
-                                    <text x="12" y="16" font-size="9" font-family="Arial, Helvetica, sans-serif" fill="#ffffff" text-anchor="middle">gRPC</text>
-                                </svg>
-                            </span>
-                            gRPC
-                        </li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/socketdotio.svg" alt="WebSockets"/></span>WebSockets</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/rabbitmq.svg" alt="RabbitMQ"/></span>RabbitMQ</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/celery.svg" alt="Celery"/></span>Celery</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nginx.svg" alt="NGINX"/></span>NGINX</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/prometheus.svg" alt="Prometheus"/></span>Prometheus</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/grafana.svg" alt="Grafana"/></span>Grafana</li>
-                        <li><span class="inline-block align-middle w-5 h-5 mr-2"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linux.svg" alt="Linux"/></span>Linux</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="max-w-2xl mx-auto py-12 px-4">
-            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Experience</h2>
-            <div class="bg-[#23272f] rounded-lg p-5 shadow border border-gray-800 mb-6">
-                <h3 class="font-bold text-lg text-gray-100 mb-1">Software Engineering Intern</h3>
-                <div class="text-xs text-blue-300 mb-1">FlyRobotics, Santarem, Portugal &mdash; June 2025 - September 2025</div>
-                <ul class="list-disc list-inside text-gray-300 text-sm mb-1">
-                    <li>Migrated a legacy WordPress setup to a Django + Wagtail CMS, improving API structure, security, and long-term maintainability.</li>
-                    <li>Developed and connected REST APIs to a React frontend for dynamic content rendering and frontend/backend separation.</li>
-                    <li>Designed reusable Wagtail page models and collaborated with designers to streamline non-technical content editing.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="max-w-3xl mx-auto py-12 px-4">
-            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Projects</h2>
-            <div class="space-y-6">
-                <div class="bg-[#23272f] rounded-lg p-5 shadow border border-gray-800">
-                    <h3 class="font-bold text-lg text-gray-100 mb-1">OmniPrice – AI-Powered Dynamic Pricing System | FastAPI, React, MongoDB Atlas, Docker, AWS</h3>
-                    <ul class="list-disc list-inside text-gray-300 text-sm mb-1">
-                        <li>Designed a distributed microservices architecture with 6+ services (Scraper, Pricing Engine, LLM Assistant, API Gateway), processing 1,000+ daily price comparisons with 99.95% uptime</li>
-                        <li>Built an automated scraping system using Playwright, Celery, and anti-bot tactics, extracting product prices from 50+ e-commerce platforms and reducing manual tracking by 90%</li>
-                        <li>Integrated Google Gemini API and contextual product rules to deliver real-time pricing recommendations, boosting profit margins by 15–25% and cutting decision-making time by 85%</li>
-                        <li>Deployed a production-grade stack on AWS with Terraform and GitHub Actions CI/CD, enabling versioned infrastructure, seamless rollouts, and zero-downtime deployments</li>
-                    </ul>
-                </div>
-
-                <div class="bg-[#23272f] rounded-lg p-5 shadow border border-gray-800">
-                    <h3 class="font-bold text-lg text-gray-100 mb-1">GoMetrics - Cloud-Native Monitoring tool | Go, Docker, Prometheus, Grafana</h3>
-                    <ul class="list-disc list-inside text-gray-300 text-sm mb-1">
-                        <li>Built a system metrics microservice in Go (CPU, memory, disk, network) with concurrent collectors and REST/Prometheus endpoints.</li>
-                        <li>Deployed with Docker Compose and integrated into a Prometheus + Grafana stack for real-time observability.</li>
-                        <li>Implemented health/readiness probes, configurable runtime settings, and slim multi-stage Docker builds.</li>
-                    </ul>
-                </div>
-
-                <div class="bg-[#23272f] rounded-lg p-5 shadow border border-gray-800">
-                    <h3 class="font-bold text-lg text-gray-100 mb-1">LogInsight – AI-Enhanced Log Processing Pipeline | FastAPI, Ray, Anthropic Claude API, Docker</h3>
-                    <ul class="list-disc list-inside text-gray-300 text-sm mb-1">
-                        <li>Developed a backend system that integrates with Datadog and Grafana APIs to fetch real-world logs and automatically clean, normalize, and deduplicate them using Claude.</li>
-                        <li>Implemented parallel ingestion and processing with Ray to handle large-scale unstructured logs, achieving up to 3× faster cleanup compared to sequential processing.</li>
-                        <li>Designed modular endpoints enabling easy integration with developer tools, transforming chaotic logs into structured, queryable datasets for rapid debugging and analysis.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="max-w-2xl mx-auto py-12 px-4">
-            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Education</h2>
-            <div class="mb-4">
-                <h3 class="font-bold text-gray-100">Celal Bayar University</h3>
-                <div class="text-xs text-blue-300 mb-1">Bachelor of Science in Software Engineering, Manisa, Turkey &mdash; Sep 2022 -  Feb 2026 (Expected)</div>
-                <div class="text-gray-300 text-sm"><strong>Relevant Coursework:</strong> OOP, Software Architecture and Design, Service-Oriented Architecture, Software Testing, Software Requirements and Analysis, Computer Networks, Database Management System.</div>
-            </div>
-            <div class="mb-4">
-                <h3 class="font-bold text-gray-100">Instituto Politécnico de Tomar</h3>
-                <div class="text-xs text-blue-300 mb-1">Erasmus+ Exchange Study program in Computer Engineering, Santarem, Portugal &mdash; Feb 2025 - July 2025</div>
-                <div class="text-gray-300 text-sm"><strong>Relevant Coursework:</strong> Project Management, DevOps, Web Development, Internet of Things, Operating Systems, Intelligent Systems.</div>
-            </div>
-            <div class="mb-4">
-                <h3 class="font-bold text-gray-100">CodePath</h3>
-                <div class="text-xs text-blue-300 mb-1">Intermediate Technical Interview Prep, Remote &mdash; june  2025 - Augest 2025</div>
-                <div class="text-gray-300 text-sm"><strong>Relevant Skills:</strong> Data Structures, Algorithms </div>
-            </div>
-            <div class="mb-4">
-                <h3 class="font-bold text-gray-100">A2SV (Africa to Silicon Valley)</h3>
-                <div class="text-xs text-blue-300 mb-1">Intensive Algorithm Training Program, Remote &mdash; June 2025 - dec 2025</div>
-                <div class="text-gray-300 text-sm"><strong>Relevant Skills:</strong> Algorithms, Problem Solving, Coding Interviews</div>
-            </div>
-            <div>
-                <h3 class="font-bold text-gray-100">AddisCoder</h3>
-                <div class="text-xs text-blue-300 mb-1">Prestigious CS Bootcamp by Harvard and Stanford Faculty, Addis Ababa, Ethiopia &mdash; Summer 2019</div>
-                <div class="text-gray-300 text-sm"><strong>Relevant Skills:</strong> Data Structures and Algorithms, Python Programming</div>
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="max-w-2xl mx-auto py-12 px-4">
-            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Certifications</h2>
-            <ul class="list-disc list-inside text-gray-300 text-sm space-y-2">
-                <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/T6kdcdKSTfg2aotxT/XvvYRvb2YpfkyA52H_T6kdcdKSTfg2aotxT_2yZe9NWCw3JbneBL6_1738027042109_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Accenture: Development and Advanced Software Engineering Job Simulation — Forage Virtual Internship (Jan 2025)</a></li>
-                <li><a href="https://www.hackerrank.com/certificates/251f1a3fa767" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">HackerRank Problem Solving Certificate(Augest 2025)</a></li>
-                <li><a href="https://www.udemy.com/certificate/UC-cf8263f9-9065-49eb-abb6-245189f582a0/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">The Complete Python Developer  — Zero To Mastery Academy (Jan 2023)</a></li>
-                <li><a href="https://www.sololearn.com/certificates/CT-4QJQKQ2A" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline"> Master The C language — Udemy(April 2023)</a></li>
-                <li><a href="https://www.linkedin.com/learning/certificates/7b5861f68942351d46641d81b1f5dada6e610764db74de08d7ae23dadd428c27" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Career Essentials in GitHub Professional Certificate — Github (July 2025)</a></li>
-                <li><a href="https://www.linkedin.com/learning/certificates/c413f89477665ad8e89c416c37d48a90b1213c5836d4a8c19b5981c123c48c99" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Career Essentials in Data Analysis — Microsoft and LinkedIn (Feb 2024)</a></li>
-                <li><a href="https://www.linkedin.com/learning/certificates/74e11a0b2f12ff41e40cd1287ebc3ea2536fa340fe9b304f8eb808ae10096720" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Data Engineering Foundations Professional Certificate — by Astronomer (Feb 2025)</a></li>
-            </ul>
-              
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="max-w-2xl mx-auto py-12 px-4">
-            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Contact</h2>
-            <form id="contactForm" class="space-y-4">
-                <input type="text" id="name" placeholder="Your Name" class="w-full p-2 rounded border border-gray-700 bg-[#23272f] text-gray-100" required>
-                <input type="email" id="email" placeholder="Your Email" class="w-full p-2 rounded border border-gray-700 bg-[#23272f] text-gray-100" required>
-                <textarea id="message" placeholder="Your Message" class="w-full p-2 rounded border border-gray-700 bg-[#23272f] text-gray-100" rows="4" required></textarea>
-                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
-            </form>
-        </section>
-        <!-- Social Icons at the very end -->
-        <div class="flex justify-center space-x-8 my-8">
-            <a href="mailto:dirshayeyishak@gmail.com" class="hover:text-blue-400" title="Email"><i class="fa fa-envelope fa-2x"></i></a>
-            <a href="https://github.com/dirshaye" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400" title="GitHub"><i class="fa fa-github fa-2x"></i></a>
-            <a href="https://linkedin.com/in/dirshaye" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400" title="LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/dirshaye" class="linkedin" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+          <a href="https://github.com/dirshaye" class="github" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-github"></i>
+          </a>
         </div>
-        <footer class="mt-auto py-6 text-center text-gray-500 text-sm">
-            &copy; 2025 Dirshaye Faltamo. All Rights Reserved.
-        </footer>
-    </div>
-    <script src="https://use.fontawesome.com/4eae3d7c7a.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-        // Contact form handler
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            // Create mailto link with form data
-            const subject = `Portfolio Contact from ${name}`;
-            const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-            const mailtoLink = `mailto:dirshayeyishak@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            
-            // Open email client
-            window.location.href = mailtoLink;
-            
-            // Optional: Show success message
-            alert('Your email client should open now. Thank you for your message!');
-        });
+      </div>
+    </header>
+    <!-- End Header -->
 
-        // Particles.js config
-        particlesJS('particles-js', {
-            "particles": {
-                "number": {"value": 80, "density": {"enable": true, "value_area": 800}},
-                "color": {"value": "#4f8cff"},
-                "shape": {"type": "circle"},
-                "opacity": {"value": 0.3, "random": false},
-                "size": {"value": 3, "random": true},
-                "line_linked": {"enable": true, "distance": 150, "color": "#4f8cff", "opacity": 0.2, "width": 1},
-                "move": {"enable": true, "speed": 1.5, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false}
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {"onhover": {"enable": true, "mode": "repulse"}, "onclick": {"enable": true, "mode": "push"}, "resize": true},
-                "modes": {"repulse": {"distance": 100, "duration": 0.4}, "push": {"particles_nb": 4}}
-            },
-            "retina_detect": true
-        });
-    </script>
-</body>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="about-me container">
+        <div class="section-title">
+          <h2>About</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/about/me.jpg" class="img-fluid profile-image" alt="Dirshaye Faltamo" />
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <p class="fst-italic">Hi, I am Dirshaye.</p>
+            <p>
+              I am a senior Software Engineering student, currently in Turkey. Over the past few years, I have
+              gained hands-on experience through bootcamp, hackathon, internship, and academic works. These experiences helped me
+              develop a strong interest in backend development, where I enjoy building APIs, working with data, and improving system
+              performance—whether that means optimizing database queries or designing reliable services.
+            <p>
+            </p>
+              Beyond building features, I care deeply about creating software that is reliable, secure, and maintainable. I enjoy
+              thinking about how systems behave in production environments, not just during development, and how design choices impact
+              long-term stability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Education Section ======= -->
+    <section id="education" class="education">
+      <div class="container">
+        <div class="section-title">
+          <h2>Education</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="one-line">
+                <h4> Manisa Celal Bayar University(Fully funded Turkish Government Scholarship)</h4>
+                <p><i class="bi bi-pin-map"></i> Manisa, Turkiye</p>
+              </div>
+              <div class="one-line">
+                <p><em>BSc in Software Engineering</em></p>
+                <p><em>September 2022 - June 2026 (Expected)</em></p>
+              </div>
+              <h6 style="padding: 0px 10px;">Relevant Coursework</h6>
+              <ul>
+                <li>Object-Oriented Programming</li>
+                <li>Data Structures and Algorithms,</li>
+                <li>Computer Networks</li>
+                <li>Software Testing</li>
+                <li>Software Design and Architecture</li>
+                <li>Software Requirements and Analysis,</li>
+                <li>Service-Oriented Architecture</li>
+                <li>Database Management Systems</li>
+              </ul>
+            <h6 style="padding: 0px 10px;">Honors</h6>
+            <ul>
+              <li>Sole department representative for Erasmus+ Exchange Program in Portugal</li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="one-line">
+                <h4>Instituto Politecnico de Tomar</h4>
+                <p><i class="bi bi-pin-map"></i> Santarem, Portugal</p>
+              </div>
+              <div class="one-line">
+                <p><em>Erasmus+ Exchange in Computer Engineering</em></p>
+                <p><em>Feb 2025 - July 2025</em></p>
+              </div>
+              <h6 style="padding: 0px 10px;">Relevant Coursework</h6>
+              <ul>
+                <li>Operating Systems</li>
+                <li>Project Management</li>
+                <li>DevOps</li>
+                <li>Internet of Things</li>
+                <li>Intelligent Systems</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="one-line">
+                <h4>CodePath</h4>
+                <p><i class="bi bi-pin-map"></i> Remote</p>
+              </div>
+              <div class="one-line">
+                <p><em>Intermediate Technical Interview Prep</em></p>
+                <p><em>June 2025 - August 2025</em></p>
+              </div>
+              <h6 style="padding: 0px 10px;">Relevant Skills</h6>
+              <ul>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="one-line">
+                <h4>A2SV (Africa to Silicon Valley)</h4>
+                <p><i class="bi bi-pin-map"></i> Remote</p>
+              </div>
+              <div class="one-line">
+                <p><em>Algorithm Training Program</em></p>
+                <p><em>June 2025 - Dec 2025</em></p>
+              </div>
+              <h6 style="padding: 0px 10px;">Relevant Skills</h6>
+              <ul>
+                <li>Algorithms</li>
+                <li>Problem Solving</li>
+                <li>Coding Interviews</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="one-line">
+                <h4>AddisCoder</h4>
+                <p><i class="bi bi-pin-map"></i> Addis Ababa, Ethiopia</p>
+              </div>
+              <div class="one-line">
+                <p><em>CS Bootcamp</em></p>
+                <p><em>Summer 2019</em></p>
+              </div>
+              <h6 style="padding: 0px 10px;">Relevant Skills</h6>
+              <ul>
+                <li>Data Structures and Algorithms</li>
+                <li>Python Programming</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Education Section -->
+
+    <!-- ======= Experience Section ======= -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-title">
+          <h2>Experience</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="one-line">
+                <h4><em>Software Engineering Intern</em></h4>
+                <p><em>June 2025 - September 2025</em></p>
+              </div>
+              <div class="one-line">
+                <p>FlyRobotics</p>
+                <p><i class="bi bi-pin-map"></i> Santarem, Portugal</p>
+              </div>
+              <ul>
+                <li>Migrated a legacy WordPress setup to Django + Wagtail, improving API structure and security.</li>
+                <li>Built and connected REST APIs to a React frontend for dynamic content rendering.</li>
+                <li>Designed reusable Wagtail page models to streamline non-technical content editing.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= End Experience Section ======= -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <h4>OmniPrice</h4>
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/omniprice.png" class="img-fluid" alt="OmniPrice" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="omniprice.html"
+                    data-gallery="portfolioDetailsGallery"
+                    data-glightbox="type: external"
+                    class="portfolio-details-lightbox"
+                    title="Portfolio Details">
+                    <i class="bx bx-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <h4>GoMetrics</h4>
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/gometrics.png" class="img-fluid" alt="GoMetrics" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="gometrics.html"
+                    data-gallery="portfolioDetailsGallery"
+                    data-glightbox="type: external"
+                    class="portfolio-details-lightbox"
+                    title="Portfolio Details">
+                    <i class="bx bx-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <h4>QuakeGuard</h4>
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/quickGuard.png" class="img-fluid" alt="QuakeGuard" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="quickguard.html"
+                    data-gallery="portfolioDetailsGallery"
+                    data-glightbox="type: external"
+                    class="portfolio-details-lightbox"
+                    title="Portfolio Details">
+                    <i class="bx bx-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <h4 style="text-align:left;color:#12d640">Languages</h4>
+              <p style="text-align:left;">
+                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go">
+                <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                <img src="https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
+                <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash">
+              </p>
+            </div>
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <h4 style="text-align:left;color:#12d640">Web Frameworks</h4>
+              <p style="text-align:left;">
+                <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
+                <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot">
+                <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+              </p>
+            </div>
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <h4 style="text-align:left;color:#12d640">Databases</h4>
+              <p style="text-align:left;">
+                <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+                <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+                <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis">
+              </p>
+            </div>
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <h4 style="text-align:left;color:#12d640">Cloud and DevOps</h4>
+              <p style="text-align:left;">
+                <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS">
+                <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+                <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform">
+                <img src="https://img.shields.io/badge/GitHub%20Actions%20(CI%2FCD)-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions (CI/CD)">
+                <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus">
+                <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" alt="Grafana">
+                <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=000000" alt="Linux">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-share-alt"></i>
+              <h3>Social Profiles</h3>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/dirshaye" class="linkedin" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bxl-linkedin-square"></i>
+                </a>
+                <a href="https://github.com/dirshaye" class="github" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-4 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Email</h3>
+              <a href="mailto:dirshayeyishak@gmail.com">dirshayeyishak@gmail.com</a>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-phone-call"></i>
+              <h3>Phone</h3>
+              <a href="tel:+905346619539">+90 534 661 9539</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

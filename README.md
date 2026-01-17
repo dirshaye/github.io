@@ -1,35 +1,28 @@
-# Contact Information Website
+# Dirshaye Faltamo Portfolio
 
-This repository contains the source code for a simple contact information website. The website includes:
+Personal portfolio site with a tech-focused layout, project highlights, and contact information.
 
-- **Home Page (index.html)**: A landing page displaying the main information.
-- **Contact Page (contact.html)**: A dedicated page to display contact details.
+## Pages
 
-## Features
+- `index.html`: main portfolio page (about, education, experience, projects, skills, contact)
+- `omniprice.html`: OmniPrice project details
+- `gometrics.html`: GoMetrics project details
+- `quakeguard.html`: QuakeGuard project details
 
-- **HTML Structure**: Basic HTML used for the layout.
-- **CSS Styling**: Custom styling for a clean and minimal design.
-- **Static Hosting**: The website is hosted using GitHub Pages.
+## Stack
 
----
+- HTML/CSS/JS (static site)
+- Bootstrap, Boxicons, Glightbox (vendor assets under `assets/vendor/`)
+- GitHub Pages for hosting
 
-## How to View the Website
+## Local Preview
 
-You can view the website by visiting the following link:
+Open `index.html` directly in a browser, or run a quick static server:
 
-[GitHub Pages Deployment](https://dirshaye.net)
 
----
+Then visit `http://localhost:5000`.
 
-## Future Enhancements
+## Deployment
 
-- Add JavaScript for interactivity.
-- Include a form for visitors to send messages.
-- Enhance the design with additional CSS frameworks.
-
----
-
-## License
-
-This project is licensed under the MIT License.
+The site is designed for GitHub Pages.
 
