@@ -6,8 +6,7 @@ Personal portfolio site with a tech-focused layout, project highlights, and cont
 
 - `index.html`: main portfolio page (about, education, experience, projects, skills, contact)
 - `omniprice.html`: OmniPrice project details
-- `gometrics.html`: GoMetrics project details
-- `quakeguard.html`: QuakeGuard project details
+- `lagwatch.html`: LagWatch project details
 
 ## Stack
 
@@ -25,4 +24,3 @@ Then visit `http://localhost:5000`.
 ## Deployment
 
 The site is designed for GitHub Pages.
-
