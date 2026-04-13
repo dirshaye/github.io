@@ -33,15 +33,13 @@
           <div class="col-lg-12 portfolio-info">
             <h2 style="color:#12d640">LagWatch</h2>
             <ul>
-              <li><strong>Tech Stack</strong>: Go, JavaScript/HTML/CSS, Linux.</li>
-              <li><strong>Focus</strong>: Out-of-band lag triage, host observability, performance diagnostics</li>
+              <li><strong>Tech Stack</strong>: Golang, Linux, JavaScript, HTML5/CSS3.</li>
+              <li><strong>Focus</strong>: Out-of-band PC lag triage, host observability, recovery support</li>
               <li><strong>GitHub URL</strong>: <a href="https://github.com/dirshaye/LagWatch" target="_blank" rel="noopener noreferrer">https://github.com/dirshaye/LagWatch</a></li>
             </ul>
             <ul>
-              <li>Built a lightweight host observability service in Go using a concurrent collector/aggregator pipeline with goroutines and buffered channels.</li>
-              <li>Captured CPU, memory, disk, and network telemetry with low runtime overhead for real-time lag diagnosis.</li>
-              <li>Exposed JSON snapshot APIs for quick out-of-band checks and a Prometheus-compatible endpoint for historical analysis.</li>
-              <li>Integrated Prometheus and Grafana dashboards to convert raw metrics into actionable bottleneck and capacity signals.</li>
+              <li>Built a lightweight single-host observability and recovery service in Go using concurrent collectors and a buffered-channel aggregator to capture CPU, memory, disk, and network telemetry with low runtime overhead.</li>
+              <li>Implemented real-time system monitoring REST APIs and SSE plus a mobile-first browser UI for out-of-band triage from phone or tablet when the desktop is degraded.</li>
             </ul>
           </div>
         </div>
