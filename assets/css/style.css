@@ -401,9 +401,16 @@ section .container {
 # About
 --------------------------------------------------------------*/
 .profile-image {
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 50%;
+  border: 4px solid rgba(24, 210, 110, 0.3);
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .about-me .content h3 {
@@ -786,6 +793,16 @@ section .container {
   margin: 0 0 0 68px;
 }
 
+.contact .info-box p a {
+  color: #18d26e;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.contact .info-box p a:hover {
+  color: #35e888;
+}
+
 .contact .info-box .social-links {
   margin: 5px 0 0 68px;
   display: flex;
@@ -812,4 +829,54 @@ section .container {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/*--------------------------------------------------------------
+# Custom Skills & Tech Chips
+--------------------------------------------------------------*/
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.skill-tag {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.25s ease;
+  letter-spacing: 0.3px;
+}
+
+.skill-tag:hover {
+  background: rgba(24, 210, 110, 0.15);
+  border-color: #18d26e;
+  color: #18d26e;
+  transform: translateY(-2px);
+}
+
+.fellowship-badge {
+  display: inline-block;
+  background: rgba(24, 210, 110, 0.12);
+  color: #18d26e;
+  border: 1px solid rgba(24, 210, 110, 0.3);
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.portfolio .portfolio-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
 }
