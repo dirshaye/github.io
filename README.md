@@ -2,7 +2,7 @@
 
 Personal portfolio and engineering showcase for **Dirshaye Faltamo**, Software Engineer specializing in backend microservices, cloud infrastructure, and modern web platforms.
 
-🌐 **Live Website**: [https://dirshaye.net](https://dirshaye.net)
+🌐 **Live Website**: [https://dirshaye.dev](https://dirshaye.dev)
 
 ---
 
@@ -38,7 +38,7 @@ A responsive, high-performance personal portfolio showcasing:
 ├── semayat-hotel.html        # Semayat Hotel case study (lightbox modal)
 ├── omniprice.html            # OmniPrice project details
 ├── lagwatch.html             # LagWatch project details
-├── CNAME                     # Custom domain pointer (dirshaye.net)
+├── CNAME                     # Custom domain pointer (dirshaye.dev)
 ├── assets/
 │   ├── css/
 │   │   └── style.css         # Theme styles, custom CSS skill tags & animations
@@ -73,4 +73,4 @@ Then open your browser to **`http://localhost:8080`**.
 
 ## Deployment
 
-Hosted on **GitHub Pages** with custom apex domain DNS configuration via **Cloudflare** and [`CNAME`](./CNAME) pointing to **`dirshaye.net`**. Automatic deployment triggers on each push to the `main` branch.
+Hosted on **GitHub Pages** with custom apex domain DNS configuration via **Cloudflare** and [`CNAME`](./CNAME) pointing to **`dirshaye.dev`**. Automatic deployment triggers on each push to the `main` branch.
