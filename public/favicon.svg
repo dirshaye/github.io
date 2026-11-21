@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#040404" />
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#18d26e" stroke-width="3" />
+  <text x="32" y="42" text-anchor="middle" font-family="Poppins, system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#18d26e">DF</text>
+</svg>
