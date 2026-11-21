@@ -1,6 +1,6 @@
 # Repository Guide (`dirshaye.dev`)
 
-Personal software engineering portfolio for Dirshaye Faltamo, built as a static multi-page **Vite + strict TypeScript** site and deployed to **GitHub Pages** (`dirshaye.dev`).
+Personal software engineering portfolio for Dirshaye Faltamo, built as a static multi-page **Vite + strict TypeScript** site and deployed on **Cloudflare Workers (Static Assets)** at `dirshaye.dev`.
 
 ## Project Structure
 
@@ -10,12 +10,10 @@ Personal software engineering portfolio for Dirshaye Faltamo, built as a static 
 - `src/case-study.ts` — Stylesheet entrypoint for case study pages.
 - `src/styles/main.css` — Theme styles and CSS custom properties (`:root` design tokens).
 - `public/` — Static assets copied verbatim into `dist/` without hashing:
-  - `public/CNAME` — Custom domain (`dirshaye.dev`). Never remove.
-  - `public/.nojekyll` — Disables Jekyll processing on GitHub Pages.
   - `public/favicon.svg` — Site favicon.
   - `public/assets/resume/resume.pdf` — Active resume served at `/assets/resume/resume.pdf`.
   - `public/assets/img/` — Profile, background, and project preview images.
-- `.github/workflows/deploy.yml` — CI typecheck, build, and GitHub Pages deployment.
+- `wrangler.jsonc` — Cloudflare Workers Static Assets configuration serving `./dist`.
 
 ## Development Commands
 
@@ -27,6 +25,7 @@ npm run dev          # Start Vite dev server with HMR
 npm run typecheck    # Run strict TypeScript check (tsc --noEmit)
 npm run build        # Typecheck and build production bundle to dist/
 npm run preview      # Preview production build locally
+npm run deploy       # Build and deploy to Cloudflare Workers via Wrangler
 ```
 
 Always run `npm run build` before committing changes to verify TypeScript types and the production bundle.
@@ -47,4 +46,4 @@ Always run `npm run build` before committing changes to verify TypeScript types 
 
 ## Deployment
 
-Pushes to `main` automatically run `.github/workflows/deploy.yml`, which executes `npm ci`, `npm run build`, and deploys `dist/` to GitHub Pages. Ensure GitHub repository **Settings → Pages → Source** is set to **GitHub Actions**.
+Deployed via **Cloudflare Workers Builds** connected to `main` using `wrangler.jsonc` (`npm run build` → `npx wrangler deploy`), serving `./dist` as Workers Static Assets on `dirshaye.dev`.

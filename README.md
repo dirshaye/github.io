@@ -10,23 +10,21 @@ Personal portfolio for **Dirshaye Faltamo**, Software Engineer at **Emma - The S
 
 - **Build & Tooling**: [Vite](https://vite.dev/) + strict **TypeScript**
 - **UI & Icons**: Bootstrap 5 CSS, Bootstrap Icons, Boxicons, GLightbox
-- **Hosting & CI/CD**: GitHub Pages via GitHub Actions with custom domain DNS on Cloudflare (`dirshaye.dev`)
+- **Hosting & CI/CD**: Cloudflare Workers (Static Assets) via Cloudflare Workers Builds (`dirshaye.dev`)
 
 ---
 
 ## Repository Structure
 
 ```text
-├── .github/workflows/deploy.yml   # CI typecheck, build, and GitHub Pages deploy
 ├── AGENTS.md                      # Engineering & content conventions
 ├── index.html                     # Main portfolio page
 ├── visit-wolaita.html             # Visit Wolaita case study modal page
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
+├── wrangler.jsonc                 # Cloudflare Workers Static Assets config
 ├── public/
-│   ├── CNAME                      # dirshaye.dev
-│   ├── .nojekyll
 │   ├── favicon.svg
 │   └── assets/
 │       ├── img/                   # Profile, background, and project images
@@ -49,16 +47,17 @@ npm install
 npm run dev
 ```
 
-To typecheck and build for production:
+To typecheck, build, or deploy:
 
 ```bash
 npm run typecheck
 npm run build
 npm run preview
+npm run deploy
 ```
 
 ---
 
 ## Deployment
 
-Pushing to `main` runs `.github/workflows/deploy.yml`, which typechecks with `tsc --noEmit`, builds `dist/` with Vite, and deploys automatically to **GitHub Pages** (`dirshaye.dev`).
+Pushing to `main` triggers **Cloudflare Workers Builds**, which runs `npm run build` (`tsc --noEmit && vite build`) and deploys `./dist` to **Cloudflare Workers (Static Assets)** at `dirshaye.dev`.
