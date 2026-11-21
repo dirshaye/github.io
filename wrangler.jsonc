@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "dirshaye-portfolio",
+  "name": "github-io",
   "compatibility_date": "2026-11-21",
   "assets": {
     "directory": "./dist",
